@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>सरस्वती पूजा निमंत्रण</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: "Segoe UI", sans-serif;
+     background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("img.jpg");
+    background-size: cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background: url("img2.jpg");; 
+    width:90%;
+    max-width:450px;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,165,0,0.6);
+    animation:fadeIn 2s ease;
+
+    
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(0.9);}
+    to{opacity:1; transform:scale(1);}
+}
+
+h1{
+    color:#c91e00;
+    margin-bottom:10px;
+}
+
+.shlok{
+    font-style:italic;
+    color: rgb(255, 85, 0);
+    margin:15px 0;
+    line-height:1.6;
+}
+
+.content{
+    font-size:15px;
+    color:#5d0505;
+    line-height:1.7;
+    margin-top:10px;
+}
+
+footer{
+    margin-top:20px;
+    font-size:15px;
+    color:#444;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>  
+
+<div class="card">
+    <h1>🌼 सरस्वती पूजा निमंत्रण 🌼</h1>
+
+    <div class="shlok"> <b>
+🙏 या कुन्देन्दु तुषारहार धवला, या शुभ्र वस्त्रावृता।<br>
+या वीणावरदण्डमण्डित करा, या श्वेत पद्मासना॥ 🙏 </b>
+    </div>
+
+    <div class="content">
+<b>
+सादर प्रणाम,<br><br>
+
+आप सभी को यह बताते हुए हमें अत्यंत हर्ष हो रहा है कि हमारे निवास स्थान पर  
+विद्या की देवी माँ सरस्वती की पूजा का आयोजन किया जा रहा है।<br><br>
+
+अतः आप सपरिवार पधारकर  
+माँ सरस्वती का आशीर्वाद प्राप्त करें  
+और इस पावन अवसर की शोभा बढ़ाएँ।<br><br>
+
+📅 दिनांक: 23/01/2026<br>
+⏰ समय: 11:00 AM<br>
+📍 स्थान: हमारा निवास – दधुआ, रविबार हाट के पास
+</b>
+    </div>
+
+    <footer>
+        भवदीय:<br>
+        👉 संजीत कुमार
+    </footer>
+</div>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop muted>
+    <source src="song.mpeg" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
+    music.muted = false;
+    music.play().catch(()=>{});
+});
+
+
+</script>
+
+</body>
+</html>
