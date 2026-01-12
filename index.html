@@ -66,7 +66,7 @@ footer{
 </style>
 </head>
 
-<body>  
+<body onclick="playMusic()">  
 
 <div class="card">
     <h1>🌼 सरस्वती पूजा निमंत्रण 🌼</h1>
@@ -100,20 +100,15 @@ footer{
 </div>
 
 <!-- Background Music -->
-<audio id="bgMusic" autoplay loop muted>
+<audio id="bgMusic" autoplay loop>
     <source src="song.mpeg" type="audio/mpeg">
 </audio>
 
-
 <script>
-
-window.addEventListener("load", () => {
+function playMusic(){
     const music = document.getElementById("bgMusic");
-    music.muted = false;
     music.play().catch(()=>{});
-});
-
-
+}
 </script>
 
 </body>
